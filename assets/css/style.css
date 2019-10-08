@@ -1,0 +1,21 @@
+#p1
+{
+    clear : both;
+    background-color: aqua;
+    float : left;
+}
+
+#p2
+{
+    
+    clear : both;
+    background-color : red;
+    float : right;
+}
+
+#p3
+{
+    
+    clear : both;
+    background-color : green;
+}
