@@ -1,21 +1,21 @@
-#p1
+#header-nav
 {
-    clear : both;
-    background-color: aqua;
-    float : left;
+    background-color:beige;
 }
 
-#p2
+#about-section
 {
-    
-    clear : both;
-    background-color : red;
-    float : right;
+    background-color: beige;
 }
 
-#p3
+body
 {
-    
-    clear : both;
-    background-color : green;
+    background-color: bisque;
+    margin : 0;
+}
+
+#about-section
+{
+    width : 960px;
+    margin : auto;
 }
