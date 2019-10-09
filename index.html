@@ -5,55 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-    <section id="header-nav">
+    <div class="nav-bar">
 
-        <h1 id="name-heading">
-
-            Brian Graf
-
+        <h1 class="nav-name">
+            <!-- This needs its own section since it is styled differently -->
+            <p class = "p-name">
+                    Brian Graf
+            </p>
         </h1>
 
         <nav>
-
-            <h3>
-
+            <!-- No class necessary for nav, since I will have only one nav bar -->
+            <h3 class="nav-header">
+                <!-- This class will apply to all headers in nav.  These will be the links to other pages -->
                 About
-
             </h3>
 
-            <h3>
-
+            <h3 class="nav-header">
                 Portfolio
-
             </h3>
 
-            <h3>
-
+            <h3 class="nav-header">
                 Contact
-
             </h3>
-
         </nav>
+    </div>
 
-    </section>
+    <div class="about-section">
 
-
-    <section id="about-section">
-
-        <h2 id="about-heading">
-
+        <h2 class="about-heading">
             About Me
-
         </h2>
 
-        <article id="about-article">
+        <article class="about-article">
 
             <p>
                 I have been programming in C# for video game development over the past four years. I learned all of my
@@ -73,7 +64,7 @@
 
         </article>
 
-    </section>
+    </div>
 
 </body>
 

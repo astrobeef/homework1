@@ -1,16 +1,85 @@
-#header-nav
+:root
 {
-    background-color:beige;
+    --nav-name-width : 20%;
+    --nav-margin : 15%;
+    --nav-height : 80px;
+    --nav-header-font-size : 18px;
+    --nav-name-font-size : 24px;
 }
 
 body
 {
-    background-color: bisque;
+    margin : 0;
+    background-color: #F0F0F0;
+    color : #777;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#about-section
+.nav-bar
 {
-    background-color: beige;
-    width : 960px;
+    border-block-end: 5px;
+    border-block-end-color: #cccccc;
+    border-bottom-style: solid;
+
+    position : relative;
+    height : var(--nav-height);
+    background-color: white;
+    top : -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-name
+{
+    position : relative;
+    height : 100%;
+    width : var(--nav-name-width);
+    background-color: #4aaaa5;
+    left : var(--nav-margin);
+}
+
+.p-name
+{
+    font-size: var(--nav-name-font-size);
+    color: white;
+    padding : calc(calc(var(--nav-height) - var(--nav-name-font-size)) / 2) 25%;
+    margin : 0;
+}
+
+nav
+{
+    position : absolute;
+    right : var(--nav-margin);
+    top : 0;
+    height : 100%;
+    width : 30%;
+}
+
+.nav-header
+{
+    font-size: var(--nav-header-font-size);
+    float : left;
+    width : 33.33333%;
+    padding : calc(calc(var(--nav-height) - var(--nav-name-font-size)) / 3) 0;
+}
+
+.about-section
+{
+    border : 3px;
+    border-color : #dddddd;
+    border-style : solid;
+
+    background-color: white;
+    width : 60%;
+    margin : auto;
+}
+
+.about-heading
+{
+    margin-left : 80px;
+}
+
+.about-article
+{
+    width : 80%;
     margin : auto;
 }
