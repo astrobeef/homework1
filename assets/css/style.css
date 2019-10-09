@@ -3,19 +3,14 @@
     background-color:beige;
 }
 
-#about-section
-{
-    background-color: beige;
-}
-
 body
 {
     background-color: bisque;
-    margin : 0;
 }
 
 #about-section
 {
+    background-color: beige;
     width : 960px;
     margin : auto;
 }
