@@ -175,26 +175,23 @@ nav
     margin-top: var(--divider-margin);
 }
 
+.gallery-element
+{
+    float : left;
+    margin : 15px 30px;
+}
+
 .gallery-img
 {
     width : 200px;
     height : 200px;
-    position : absolute;
-    bottom : 0;
-    left : 0;
-    z-index: 1;
-    opacity: 0.5;
 }
 
 .gallery-name
 {
-    margin : 0;
-    width : 200px;
-    padding : 160px 30px 30px 30px;
-    top : 0;
-    position: relative;
-    z-index: 5;
-    background-color: yellow;
+    padding : 10px 30px;
+    background-color: #4aaaa5;
+    transform: translate(0, 200px);
 }
 
 .footer
@@ -210,4 +207,11 @@ nav
     border-top: 5px;
     border-top-style: solid;
     border-top-color: #4aaaa5;
+}
+
+.clearfix::after{
+
+    content: "";
+    clear: both;
+    display: table;
 }

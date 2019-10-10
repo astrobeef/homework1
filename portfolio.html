@@ -21,9 +21,9 @@
 
         <h1 class="nav-name">
             <!-- This needs its own section since it is styled differently -->
-            <p class = "p-name">
+            <p class="p-name">
                 <!-- This may be redundant: I have a paragraph within the name 'box' so I can move the text.  With padding though, I could probably achieve the same effect -->
-                    Brian Graf
+                Brian Graf
             </p>
         </h1>
 
@@ -31,15 +31,18 @@
             <!-- No class necessary for nav, since I will have only one nav bar.  I have a parent object to the headers so that they may be evenly spaced within a specific section of the entire navigaiton bar. -->
             <h3 class="nav-header">
                 <!-- This class will apply to all headers in nav.  These will be the links to other pages -->
-                <a href = "index.html">About</a>    <!--This will link us to our about page, if we are not there already-->
+                <a href="index.html">About</a>
+                <!--This will link us to our about page, if we are not there already-->
             </h3>
 
             <h3 class="nav-header">
-                <a href = "portfolio.html">Portfolio</a>    <!--This will link us to our about page, if we are not there already-->
+                <a href="portfolio.html">Portfolio</a>
+                <!--This will link us to our about page, if we are not there already-->
             </h3>
 
             <h3 class="nav-header">
-                <a href = "contact.html">Contact</a>    <!--This will link us to our about page, if we are not there already-->
+                <a href="contact.html">Contact</a>
+                <!--This will link us to our about page, if we are not there already-->
             </h3>
         </nav>
     </div>
@@ -51,34 +54,64 @@
 
         <h2 class="about-heading">
             <!-- This will be the header of our 'article' about me -->
-        
-        Portfolio
+
+            Portfolio
 
         </h2>
-        
+
         <div class="divider">
             <!-- We will have a visual divider between the header and the article.  The divider will be a thin rectangle : no text-->
-            
+
         </div>
 
-        <div class="gallery">
+        <div class="gallery clearfix">
 
-            <h3 class = "gallery-name">
+            <div class="gallery-element">
 
-                Coming Soon
-                
-            <img src = "assets/images/Desert Lowpoly Art.jpg" class = "gallery-img">
-
-            </h3>
-            
-            <h3 class = "gallery-name">
-
+                <h3 class="gallery-name">
                     Coming Soon
-                    
-                <img src = "assets/images/Desert Lowpoly Art.jpg" class = "gallery-img">
-    
                 </h3>
+                
+                <img src="assets/images/Desert Lowpoly Art.jpg" class="gallery-img">
+
+
+            </div>
             
+            <div class="gallery-element">
+
+                    <h3 class="gallery-name">
+                        Coming Soon
+                    </h3>
+                    
+                    <img src="assets/images/Desert Lowpoly Art.jpg" class="gallery-img">
+    
+    
+                </div>
+                
+            
+            <div class="gallery-element">
+
+                    <h3 class="gallery-name">
+                        Coming Soon
+                    </h3>
+                    
+                    <img src="assets/images/Desert Lowpoly Art.jpg" class="gallery-img">
+    
+    
+                </div>
+                
+            
+            <div class="gallery-element">
+
+                    <h3 class="gallery-name">
+                        Coming Soon
+                    </h3>
+                    
+                    <img src="assets/images/Desert Lowpoly Art.jpg" class="gallery-img">
+    
+    
+                </div>
+
         </div>
 
         <!-- This is the end of our article -->
@@ -87,11 +120,11 @@
     <!-- This is the end of our about section -->
 
     <div class="footer">
-            <!-- This will be a sticky footer at the bottom of the page.  We will put a copyright here and nothing else -->
-    
-            Copyright&copy;
-    
-        </div>
+        <!-- This will be a sticky footer at the bottom of the page.  We will put a copyright here and nothing else -->
+
+        Copyright&copy;
+
+    </div>
 
 </body>
 <!-- This is the end of all visual elements on our page -->
