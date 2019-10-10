@@ -1,6 +1,8 @@
 :root
 {
+    /* VARIABLES : Here I declare variables which will be used for multiple classes */
     --nav-name-width : 18%;
+    /* Above, varialbe is used for the width of the 'nav-name' class.  All variables follow this syntax */
     --nav-margin : 15%;
     --nav-height : 80px;
     --nav-header-font-size : 16px;
@@ -14,29 +16,41 @@
 body
 {
     margin : 0;
+    /* Above we set the margin to 0 so that the body is centered, unless overwritten */
     background-color: #F0F0F0;
+    /* Above we set the background color of the body to #F0F0F0. This does NOT carry over to children of body*/
     color : #777;
-    font-family: Arial, Helvetica, sans-serif;
+    /* Above we set the color of the text in the body to #777777.  This DOES carry over to the children of body */
+    font-family: 'Hepta Slab', sans-serif;
+    /* Above we set the font-family of the body.  This DOES carry over to the children of body */
 }
 
 a
 {
     text-decoration: none;
+    /* Above we set the text decoration to none.  We do this because links, by default, are underlined.  Now there is no decoration. */
     color : #777;
+    /* Above we set the text color to #777777.  Notice this is the same as the body text color.  If links had no default properties, then this code would be redundant.  However, links default to blue for their color. */
 }
 
 h1, h2, h3, h4, h5, h6{
 
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Above we set the font-family of all headers. */
 }
 
 .nav-bar
+/* This is the class used for the navigation bar.  It is a class because we use it multiple times across our HTML documents. */
 {
     border-block-end: 2px;
+    /* Above, end means the bottom of a border.  We only want the bottom border of our nav bar to be visible, so we only set the width of the 'end' of our border. */
     border-block-end-color: #cccccc;
+    /* Above, similarly, we only want to color the bottom of the border. */
     border-bottom-style: solid;
+    /* Above, we style the bottom border to be solid color. Without this, we have no style and therefor our border is invisible. */
 
     position : relative;
+    /* We set the position to relative so that children of this class element may use absolute positioning in regards to this class element */
     height : var(--nav-height);
     background-color: white;
     top : -20px;

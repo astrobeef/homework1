@@ -9,6 +9,9 @@
     <!-- Above we declare the title of our page.  This will not appear inside the window of our website -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Above we create a relative link to our css file -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Roboto&display=swap" rel="stylesheet">
+    <!-- This will temporarily download specific fonts from Google Fonts to be used on this webpage.  This does NOT carry over to other pages on our site -->
 
 </head>
 
@@ -53,7 +56,7 @@
         <!-- This is the entire division of the about section.  We will make this a visual bonding box -->
 
         <h2 class="about-heading">
-            <!-- This will be the header of our 'article' about me -->
+            <!-- This will be the header of our gallery -->
 
             Portfolio
 
@@ -65,19 +68,24 @@
         </div>
 
         <div class="gallery clearfix">
+            <!-- This is the section defining our entire gallery.  We also applay a clearfix so that the border 'about-section' will expand around our gallery -->
 
             <div class="gallery-element">
+                <!-- This is a piece in the gallery.  We declare this so we may add our image and text into one 'element' -->
 
                 <h3 class="gallery-name">
+                    <!-- This is the name of a piece.  We declare this so we may move the title around to cover the image. -->
                     Coming Soon
                 </h3>
                 
                 <img src="assets/images/Desert Lowpoly Art.jpg" class="gallery-img">
+                <!-- This is our image.  We classify this as 'gallery-img' because all gallery images will have the same dimensions.  Notice how we generalize this class name, unlike the ID 'about-desert-img'. -->
 
 
             </div>
             
             <div class="gallery-element">
+                <!-- This is another instance of the class 'gallery-element'.  It will follow the same styling of the previous 'gallery-element', but it will flow with the gallery. -->
 
                     <h3 class="gallery-name">
                         Coming Soon
