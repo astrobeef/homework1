@@ -31,6 +31,35 @@ a
     /* Above we set the text decoration to none.  We do this because links, by default, are underlined.  Now there is no decoration. */
     color : #777;
     /* Above we set the text color to #777777.  Notice this is the same as the body text color.  If links had no default properties, then this code would be redundant.  However, links default to blue for their color. */
+    
+    border : 10px;
+    border-style: solid;
+    border-color: white;
+
+}
+
+a:hover, a:focus
+{
+    
+    transition: ease-in 0.3s;
+    
+    background-color: #4aaaa5;
+    border : 10px;
+    border-style: solid;
+    border-color: #4aaaa5;
+    color : white;
+}
+
+a:active
+{
+    
+    transition: ease-in 0.5s;
+
+    background-color: white;
+    border : 10px;
+    border-style: solid;
+    border-color: white;
+    color : #4aaaa5;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -206,6 +235,7 @@ nav
     padding : 10px 30px;
     background-color: #4aaaa5;
     transform: translate(0, 200px);
+    color : white;
 }
 
 .footer
