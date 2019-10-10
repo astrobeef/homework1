@@ -1,10 +1,12 @@
 :root
 {
-    --nav-name-width : 20%;
+    --nav-name-width : 18%;
     --nav-margin : 15%;
     --nav-height : 80px;
-    --nav-header-font-size : 18px;
+    --nav-header-font-size : 16px;
     --nav-name-font-size : 24px;
+
+    --divider-margin : 20px;
 }
 
 body
@@ -15,9 +17,20 @@ body
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a
+{
+    text-decoration: none;
+    color : #777;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .nav-bar
 {
-    border-block-end: 5px;
+    border-block-end: 2px;
     border-block-end-color: #cccccc;
     border-bottom-style: solid;
 
@@ -25,7 +38,6 @@ body
     height : var(--nav-height);
     background-color: white;
     top : -20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .nav-name
@@ -41,7 +53,7 @@ body
 {
     font-size: var(--nav-name-font-size);
     color: white;
-    padding : calc(calc(var(--nav-height) - var(--nav-name-font-size)) / 2) 25%;
+    padding : calc(calc(var(--nav-height) - var(--nav-name-font-size)) / 2) 20%;
     margin : 0;
 }
 
@@ -64,7 +76,7 @@ nav
 
 .about-section
 {
-    border : 3px;
+    border : 2px;
     border-color : #dddddd;
     border-style : solid;
 
@@ -76,10 +88,41 @@ nav
 .about-heading
 {
     margin-left : 80px;
+    margin-bottom : var(--divider-margin);
+    color : #4aaaa5;
+}
+
+.divider
+{
+    height : 2px;
+    background-color: #cccccc;
+    width : 80%;
+    margin : auto;
+}
+
+#about-desert_img
+{
+
+    height : 150px;
+    width : 150px;
+    float : left;
+    padding : 3px 28px 10px 0;
 }
 
 .about-article
 {
     width : 80%;
-    margin : auto;
+    margin-left : 80px;
+}
+
+.about-p
+{
+    font-size: 18px;
+}
+
+.clearfix::after
+{
+    content : "";
+    clear : both;
+    display: none;
 }

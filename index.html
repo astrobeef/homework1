@@ -6,54 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <!-- Above we declare the title of our page.  This will not appear inside the window of our website -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Above we create a relative link to our css file -->
 
 </head>
+
+<!-- DESCRIPTION : This HTML file will serve as the index of our website as well as the 'About' page for our website.  It will contain a navigation bar, as all pages will, and it will have information about me. -->
 
 <body>
 
     <div class="nav-bar">
+        <!-- This division will encompass the entire navigation bar -->
 
         <h1 class="nav-name">
             <!-- This needs its own section since it is styled differently -->
             <p class = "p-name">
+                <!-- This may be redundant: I have a paragraph within the name 'box' so I can move the text.  With padding though, I could probably achieve the same effect -->
                     Brian Graf
             </p>
         </h1>
 
         <nav>
-            <!-- No class necessary for nav, since I will have only one nav bar -->
+            <!-- No class necessary for nav, since I will have only one nav bar.  I have a parent object to the headers so that they may be evenly spaced within a specific section of the entire navigaiton bar. -->
             <h3 class="nav-header">
                 <!-- This class will apply to all headers in nav.  These will be the links to other pages -->
-                About
+                <a href = "index.html">About</a>    <!--This will link us to our about page, if we are not there already-->
             </h3>
 
             <h3 class="nav-header">
-                Portfolio
+                <a href = "portfolio.html">Portfolio</a>    <!--This will link us to our about page, if we are not there already-->
             </h3>
 
             <h3 class="nav-header">
-                Contact
+                <a href = "contact.html">Contact</a>    <!--This will link us to our about page, if we are not there already-->
             </h3>
         </nav>
     </div>
 
+    <!-- This is the end of our navigation bar.  Now we move on to the about section -->
+
     <div class="about-section">
+        <!-- This is the entire division of the about section.  We will make this a visual bonding box -->
 
         <h2 class="about-heading">
+            <!-- This will be the header of our 'article' about me -->
             About Me
         </h2>
+        
+        <div class="divider">
+            <!-- We will have a visual divider between the header and the article.  The divider will be a thin rectangle : no text-->
+            
+        </div>
 
         <article class="about-article">
+            <!-- This is the body of our about section, aka the article.  Although this will not be visual, we want to have a parent section, article, so we may create margins for the entire section.-->
 
-            <p>
+            <img src = "assets/images/Desert Lowpoly Art.jpg" id = "about-desert_img">
+            <!-- I have chosen to apply an ID here since the modifications I will be making are quite particular to this image.  In an attempt to avoid complications further on, I have chosen a specific name instead of something generic-->
+
+            <p class = "about-p">
+                <!-- I have created the class for all paragraphs within the about page.  This will allow me to modify body text within the about section, without distrupting paragraph text outside of the about section. -->
                 I have been programming in C# for video game development over the past four years. I learned all of my
                 code from online tutorials: Unity and Youtube. Starting this year, I began practicing 3D, lowpoly art to
                 round myself out as a game developer. Now I want to expand my knowledge as a programmer past front end
                 game development. In my free time, I play video games and Dungeons & Dragons with my friends.
             </p>
 
-            <p>
+            <p class = "about-p">
+                <!-- PROBLEM : I wanted to code this paragraph such that it would always begin after the about-desert_img.  However, I could not find a way to do this.  My 'solution' was to modify the image and font-size so that this paragraph begins after the image. -->
 
                 As for work, I started cooking in my junior year of high school. I had never cooked at home, so I had
                 nearly zero experience cooking. I applied to a gourmet resturant, and the only question they asked me in
@@ -63,9 +84,13 @@
             </p>
 
         </article>
+        <!-- This is the end of our article -->
 
     </div>
+    <!-- This is the end of our about section -->
 
 </body>
+<!-- This is the end of all visual elements on our page -->
 
 </html>
+<!-- This is the end of our about page -->
