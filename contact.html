@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <!-- Above we declare the title of our page.  This will not appear inside the window of our website -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Above we create a relative link to our css file -->
+
+</head>
+
+<!-- DESCRIPTION : This HTML file will serve as the 'Contact' page for our website.  It will contain a navigation bar, as all pages will, and it will have information about how to contact me. -->
+
+<body>
+
+    <div class="nav-bar">
+        <!-- This division will encompass the entire navigation bar -->
+
+        <h1 class="nav-name">
+            <!-- This needs its own section since it is styled differently -->
+            <p class = "p-name">
+                <!-- This may be redundant: I have a paragraph within the name 'box' so I can move the text.  With padding though, I could probably achieve the same effect -->
+                    Brian Graf
+            </p>
+        </h1>
+
+        <nav>
+            <!-- No class necessary for nav, since I will have only one nav bar.  I have a parent object to the headers so that they may be evenly spaced within a specific section of the entire navigaiton bar. -->
+            <h3 class="nav-header">
+                <!-- This class will apply to all headers in nav.  These will be the links to other pages -->
+                <a href = "index.html">About</a>    <!--This will link us to our about page, if we are not there already-->
+            </h3>
+
+            <h3 class="nav-header">
+                <a href = "portfolio.html">Portfolio</a>    <!--This will link us to our about page, if we are not there already-->
+            </h3>
+
+            <h3 class="nav-header">
+                <a href = "contact.html">Contact</a>    <!--This will link us to our about page, if we are not there already-->
+            </h3>
+        </nav>
+    </div>
+
+    <!-- This is the end of our navigation bar.  Now we move on to the about section -->
+
+    <div class="about-section">
+        <!-- This is the entire division of the about section.  We will make this a visual bonding box -->
+
+        <h2 class="about-heading">
+            <!-- This will be the header of our 'article' about me -->
+        
+        Contact
+
+        </h2>
+        
+        <div class="divider">
+            <!-- We will have a visual divider between the header and the article.  The divider will be a thin rectangle : no text-->
+            
+        </div>
+
+        <article class = "contact-article">
+            <!-- Naming this article is questionable, but i want to maintain consistency with the 'about' page.  This will house the text within our contact and the input boxes needed -->
+
+            <h3 class = "contact-subhead">
+                <!-- To give a distinction between heading and this, I have named it subhead.  It's also prefixed with 'contact'.  It may be smart to go back through and generalize my classes more: about and contact should be removed in my class names -->
+
+                Name
+
+            </h3>
+
+            <input type = "text" name = "fname" class = "contact-box">
+            <br>
+
+            <h3 class="contact-subhead">
+
+                Email
+
+            </h3>
+
+            <input type= "email" name = "email" class = "contact-box">
+            <br>
+
+            <h3 class="contact-subhead">
+
+                Message
+
+            </h3>
+
+            <textarea name = "message" class = "contact-msg-box">Type a message here...</textarea>
+            <br>
+
+            <input type="submit" class = "contact-submit">
+            <br>
+
+        </article>
+
+        <!-- This is the end of our article -->
+
+    </div>
+    <!-- This is the end of our about section -->
+
+    <div class="footer">
+            <!-- This will be a sticky footer at the bottom of the page.  We will put a copyright here and nothing else -->
+    
+            Copyright&copy;
+    
+        </div>
+
+</body>
+<!-- This is the end of all visual elements on our page -->
+
+</html>
+<!-- This is the end of our about page -->
